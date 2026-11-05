@@ -6,12 +6,9 @@ Aplicativo desenvolvido com **.NET MAUI** para cálculo, gerenciamento e reserva
 
 ## 📸 Demonstração da Aplicação (Capturas de Tela)
 
-> *Para exibir suas imagens no GitHub, salve os prints na pasta `Resources/Images/` ou `docs/` e mantenha os caminhos abaixo:*
+
 
 | Tela Principal (Hospedagem) | Tela Sobre (Desenvolvedor) |
-| :---: | :---: |
-| ![Tela de Contratação de Hospedagem](docs/print_hospedagem.png) | ![Tela Sobre o Desenvolvedor](docs/print_sobre.png) |
-| *Seleção de suítes, controle de hóspedes e datas* | *Identificação do desenvolvedor e ano (Agenda 13)* |
 
 ---
 
