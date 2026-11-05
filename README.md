@@ -1,46 +1,79 @@
-# 🏨 App Hotel — Gerenciador de Hospedagem em .NET MAUI
+# 🏨 MauiAppHotel - Sistema de Gestão de Hospedagem
 
-Aplicativo multiplataforma desenvolvido em **C#** com **.NET MAUI**, criado como atividade prática do curso técnico em Desenvolvimento de Sistemas (Agendas 13 e 14). O projeto simula a contratação e o cálculo de reservas de um hotel, aplicando conceitos fundamentais de interface gráfica e Programação Orientada a Objetos (POO).
-
----
-
-## 🚀 Funcionalidades
-
-- **Seleção de Hóspedes (`Stepper`)**: Controle interativo da quantidade de adultos e crianças.
-- **Escolha da Acomodação (`Picker`)**: Listagem dinâmica de suítes com valores diferenciados por diária.
-- **Definição do Período (`DatePicker`)**: Seleção de datas de check-in e check-out com regras de validação de estadia mínima.
-- **Vinculação de Dados (`BindingContext`)**: Passagem e exibição em tempo real do resumo e valor total da reserva contratada.
-- **Tela Sobre (Identificação)**: Tela dedicada com as informações do desenvolvedor, ano e versão do projeto.
+Aplicativo desenvolvido com **.NET MAUI** para cálculo, gerenciamento e reserva de hospedagem em hotel. Este projeto foi desenvolvido durante o curso **Técnico em Desenvolvimento de Sistemas** (Componente Curricular: *Desenvolvimento de Sistemas II* / *Programação Mobile I* — Agenda 13 e Agenda 14).
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 📸 Demonstração da Aplicação (Capturas de Tela)
 
-- **Linguagem:** C#
-- **Framework:** .NET MAUI (.NET 11.0 / .NET 8.0)
-- **Marcação Visual:** XAML
-- **Paradigma:** Programação Orientada a Objetos (Classes, Encapsulamento, Coleções)
+> *Para exibir suas imagens no GitHub, salve os prints na pasta `Resources/Images/` ou `docs/` e mantenha os caminhos abaixo:*
+
+| Tela Principal (Hospedagem) | Tela Sobre (Desenvolvedor) |
+| :---: | :---: |
+| ![Tela de Contratação de Hospedagem](docs/print_hospedagem.png) | ![Tela Sobre o Desenvolvedor](docs/print_sobre.png) |
+| *Seleção de suítes, controle de hóspedes e datas* | *Identificação do desenvolvedor e ano (Agenda 13)* |
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📱 Visão Geral do Projeto
+
+O **MauiAppHotel** tem como objetivo explorar a construção de interfaces modernas com o .NET MAUI, aplicando o conceito de **Data Binding** e **BindingContext**, além da estrutura de navegação com **AppShell** e a implementação prática de **Programação Orientada a Objetos (POO)** em C#.
+
+### 🚀 Funcionalidades da Aplicação:
+- **Seleção de Suítes:** Escolha da categoria de acomodação através do componente `Picker`.
+- **Controle de Hóspedes:** Incremento e decremento do número de adultos e crianças utilizando o controle numérico `Stepper`.
+- **Período de Hospedagem:** Seleção das datas de entrada (*check-in*) e saída (*check-out*) via `DatePicker`, com validações de intervalos de datas.
+- **Tela Sobre (Exigência do Fichário 13):** Apresentação clara das informações do desenvolvedor e ano de desenvolvimento em layout limpo com cartões (`Border`).
+- **Navegação com AppShell:** Alternância entre páginas por meio de rotas integradas (menu lateral e abas).
+- **Dimensionamento Responsivo no Windows:** Janela travada em 480 × 720 pixels no método `CreateWindow`, simulando com exatidão a visualização vertical de um smartphone.
+
+---
+
+## 🛠️ Tecnologias e Recursos Utilizados
+
+- **Linguagem:** C# (.NET MAUI)
+- **IDE:** Visual Studio Community (Workload .NET MAUI)
+- **Controles de Interface:** `Border`, `ScrollView`, `VerticalStackLayout`, `Label`, `BoxView`, `Stepper`, `Picker`, `DatePicker`
+- **Padrão de Navegação:** `AppShell` / `NavigationPage`
+- **Controle de Versão:** Git e GitHub
+
+---
+
+## ⚙️ Desafios Técnicos Enfrentados e Solução de Versões do SDK
+
+Durante o ciclo de compilação e teste no ambiente local, foram diagnosticadas e superadas divergências técnicas entre as cargas de trabalho do Visual Studio e as versões do SDK:
+
+### 1. Incompatibilidade de Pacotes e Cargas de Trabalho Legadas
+- **Cenário:** O repositório herdado continha avisos de pacotes sem versão explícita (`NU1015`) e workloads apontando para versões descontinuadas do .NET com alertas de fim de suporte (`NETSDK1202`).
+- **Solução:** O projeto foi reconstruído em cima de uma estrutura nova e limpa do template oficial do .NET MAUI, permitindo que as dependências fossem restauradas perfeitamente via NuGet.
+
+### 2. Conflito do Gerador Experimental de XAML (`MauiXamlInflator=SourceGen`)
+- **Cenário:** Em compilações com SDKs recentes/previews (`net10.0` / SDK `11.0.100-rc.3`), o recurso experimental `MauiXamlInflator=SourceGen` causou falha na geração das classes parciais em tempo de compilação, disparando o erro:
+  > `error CS0103: O nome "InitializeComponent" não existe no contexto atual`
+- **Solução:** A tela `Sobre` foi refatorada e implementada em **C# puro (Code-Behind Declarativo)** no arquivo `Views/Sobre.cs`. Isso eliminou a dependência do analisador de XAML experimental em pré-compilação, garantindo 100% de estabilidade e execução imediata com código de saída limpo `0 (0x0)`.
+
+### 3. Ajuste de Tamanho de Janela para Desktop
+- Controle da dimensão da janela no Windows configurado diretamente no método `CreateWindow` do arquivo `App.xaml.cs`, garantindo estabilidade visual e proporções ideais para testes móveis no PC.
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```text
 MauiAppHotel/
-├── Models/              # Classes de dados e regras de cálculo (Quarto, Hospedagem)
-├── Views/               # Telas do aplicativo (XAML e Code-Behind)
-│   ├── ContratacaoHospedagem.xaml
-│   ├── HospedagemContratada.xaml
-│   └── Sobre.xaml
-└── Resources/           # Fontes, estilos, ícones e imagens
-👤 Desenvolvedor
-Nome: [Seu Nome Completo Aqui]
+├── Platforms/            # Configurações de plataforma (Windows, Android, etc.)
+├── Resources/            # Estilos, ícones, fontes e imagens
+│   └── Images/           # Ícones e imagens do aplicativo
+├── Views/                # Telas da aplicação
+│   ├── ContratacaoHospedagem.xaml     # Tela principal de seleção da reserva
+│   ├── HospedagemContratada.xaml      # Tela de resumo e cálculo de diárias
+│   └── Sobre.cs                       # Tela Sobre em C# (Layout limpo com Cards)
+├── App.xaml / App.xaml.cs             # Configuração inicial e tamanho de janela
+├── AppShell.xaml / AppShell.xaml.cs   # Definição das rotas de navegação
+└── MauiProgram.cs                     # Ponto de entrada (builder) da aplicação
+👨‍💻 Desenvolvedor
+Nome: Marcos Paulo Correa
 Ano de Desenvolvimento: 2026
 Curso: Técnico em Desenvolvimento de Sistemas
+Componente Curricular: Desenvolvimento de Sistemas II / Programação Mobile I (Agenda 13)
 
----
-
-### Dica rápida para colocar no GitHub:
-1. No seu repositório no GitHub, clique no botão **"Add a README"** (ou crie um arquivo chamado `README.md`).
-2. Cole o texto acima e apenas substitua o campo **`[Seu Nome Completo Aqui]`** pelo seu nome.
-3. Clique em **Commit changes...** para salvar!
