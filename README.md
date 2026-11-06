@@ -17,31 +17,16 @@ O **MauiAppHotel** tem como objetivo explorar a construção de interfaces moder
 - **Dimensionamento Responsivo no Windows:** Janela travada em 480 × 720 pixels no método `CreateWindow`, simulando com exatidão a visualização vertical de um smartphone.
 
 ---
-### 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias e Ferramentas
 
-<div align="left">
-  <!-- C# -->
-  <img src="[suspicious link removed]" alt="C#" />
-  
-  <!-- .NET MAUI -->
-  <img src="[suspicious link removed]" alt=".NET MAUI" />
-  
-  <!-- XAML -->
-  <img src="[suspicious link removed]" alt="XAML" />
-  
-  <!-- Visual Studio -->
-  <img src="[suspicious link removed]" alt="Visual Studio" />
-  
-  <!-- Windows -->
-  <img src="[suspicious link removed]" alt="Windows" />
-  
-  <!-- Git -->
-  <img src="[suspicious link removed]" alt="Git" />
-  
-  <!-- GitHub -->
-  <img src="[suspicious link removed]" alt="GitHub" />
-</div>
----
+<p align="center">
+  <img src="assets/icons/csharp-3d.png" width="85" alt="C#"/>
+  <img src="assets/icons/dotnet-maui-3d.png" width="85" alt=".NET MAUI"/>
+  <img src="assets/icons/visual-studio-3d.png" width="85" alt="Visual Studio"/>
+  <img src="assets/icons/git-3d.png" width="85" alt="Git"/>
+  <img src="assets/icons/github-3d.png" width="85" alt="GitHub"/>
+  <img src="assets/icons/notepadpp-3d.png" width="85" alt="Notepad++"/>
+</p>
 
 ---
 
