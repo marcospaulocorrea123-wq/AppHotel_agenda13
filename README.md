@@ -4,14 +4,6 @@ Aplicativo desenvolvido com **.NET MAUI** para cálculo, gerenciamento e reserva
 
 ---
 
-## 📸 Demonstração da Aplicação (Capturas de Tela)
-
-
-
-| Tela Principal (Hospedagem) | Tela Sobre (Desenvolvedor) |
-
----
-
 ## 📱 Visão Geral do Projeto
 
 O **MauiAppHotel** tem como objetivo explorar a construção de interfaces modernas com o .NET MAUI, aplicando o conceito de **Data Binding** e **BindingContext**, além da estrutura de navegação com **AppShell** e a implementação prática de **Programação Orientada a Objetos (POO)** em C#.
@@ -33,6 +25,16 @@ O **MauiAppHotel** tem como objetivo explorar a construção de interfaces moder
 - **Controles de Interface:** `Border`, `ScrollView`, `VerticalStackLayout`, `Label`, `BoxView`, `Stepper`, `Picker`, `DatePicker`
 - **Padrão de Navegação:** `AppShell` / `NavigationPage`
 - **Controle de Versão:** Git e GitHub
+
+---
+
+---
+
+## 📸 Demonstração da Aplicação (Capturas de Tela)
+
+
+
+| Tela Principal (Hospedagem) | Tela Sobre (Desenvolvedor) |
 
 ---
 
