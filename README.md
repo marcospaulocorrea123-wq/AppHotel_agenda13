@@ -17,15 +17,30 @@ O **MauiAppHotel** tem como objetivo explorar a construção de interfaces moder
 - **Dimensionamento Responsivo no Windows:** Janela travada em 480 × 720 pixels no método `CreateWindow`, simulando com exatidão a visualização vertical de um smartphone.
 
 ---
+### 🛠️ Tecnologias Utilizadas
 
-## 🛠️ Tecnologias e Recursos Utilizados
-
-- **Linguagem:** C# (.NET MAUI)
-- **IDE:** Visual Studio Community (Workload .NET MAUI)
-- **Controles de Interface:** `Border`, `ScrollView`, `VerticalStackLayout`, `Label`, `BoxView`, `Stepper`, `Picker`, `DatePicker`
-- **Padrão de Navegação:** `AppShell` / `NavigationPage`
-- **Controle de Versão:** Git e GitHub
-
+<div align="left">
+  <!-- C# -->
+  <img src="[suspicious link removed]" alt="C#" />
+  
+  <!-- .NET MAUI -->
+  <img src="[suspicious link removed]" alt=".NET MAUI" />
+  
+  <!-- XAML -->
+  <img src="[suspicious link removed]" alt="XAML" />
+  
+  <!-- Visual Studio -->
+  <img src="[suspicious link removed]" alt="Visual Studio" />
+  
+  <!-- Windows -->
+  <img src="[suspicious link removed]" alt="Windows" />
+  
+  <!-- Git -->
+  <img src="[suspicious link removed]" alt="Git" />
+  
+  <!-- GitHub -->
+  <img src="[suspicious link removed]" alt="GitHub" />
+</div>
 ---
 
 ---
