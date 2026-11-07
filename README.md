@@ -20,12 +20,15 @@ O **MauiAppHotel** tem como objetivo explorar a construção de interfaces moder
 ## 🛠️ Tecnologias e Ferramentas
 
 <p align="center">
-  <img src="assets/icons/csharp-3d.png" width="85" alt="C#"/>
-  <img src="assets/icons/dotnet-maui-3d.png" width="85" alt=".NET MAUI"/>
-  <img src="assets/icons/visual-studio-3d.png" width="85" alt="Visual Studio"/>
-  <img src="assets/icons/git-3d.png" width="85" alt="Git"/>
-  <img src="assets/icons/github-3d.png" width="85" alt="GitHub"/>
-  <img src="assets/icons/notepadpp-3d.png" width="85" alt="Notepad++"/>
+  <img src="https://img.shields.io/badge/C%23-.NET%20MAUI-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
+  <img src="https://img.shields.io/badge/.NET-MAUI-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Visual%20Studio-Community-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-Repositories-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Notepad%2B%2B-Editor-90E59A?style=for-the-badge&logo=notepadplusplus&logoColor=black"/>
 </p>
 
 ---
@@ -34,7 +37,19 @@ O **MauiAppHotel** tem como objetivo explorar a construção de interfaces moder
 
 
 
-| Tela Principal (Hospedagem) | Tela Sobre (Desenvolvedor) |
+## | Tela Principal (Hospedagem) 
+
+<img width="719" height="996" alt="AppTela01" src="https://github.com/user-attachments/assets/1b2f3e99-2668-4aa5-88a7-fe6e295b443e" />
+
+
+## | Tela Menu (Hospedagem/Sobre)
+
+<img width="712" height="1026" alt="AppTela02" src="https://github.com/user-attachments/assets/936332df-afbe-4749-b364-1df63f925137" />
+
+
+## | Tela Sobre (Desenvolvedor) 
+
+<img width="712" height="1022" alt="AppTela03" src="https://github.com/user-attachments/assets/de9168b9-5e7a-4828-abe4-b8f796101ccf" />
 
 ---
 
