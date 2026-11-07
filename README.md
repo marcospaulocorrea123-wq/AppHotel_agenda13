@@ -16,20 +16,35 @@ O **MauiAppHotel** tem como objetivo explorar a construção de interfaces moder
 - **Navegação com AppShell:** Alternância entre páginas por meio de rotas integradas (menu lateral e abas).
 - **Dimensionamento Responsivo no Windows:** Janela travada em 480 × 720 pixels no método `CreateWindow`, simulando com exatidão a visualização vertical de um smartphone.
 
+
+
 ---
-## 🛠️ Tecnologias e Ferramentas
 
-<p align="center">
-  <img src="https://img.shields.io/badge/C%23-.NET%20MAUI-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
-  <img src="https://img.shields.io/badge/.NET-MAUI-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Visual%20Studio-Community-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white"/>
-</p>
+## 🕹️ Como Utilizar a Aplicação
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-Repositories-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Notepad%2B%2B-Editor-90E59A?style=for-the-badge&logo=notepadplusplus&logoColor=black"/>
-</p>
+### 1. Executando o Projeto Localmente
+1. Clone o repositório ou baixe os arquivos para o seu computador.
+2. Abra a solução **`MauiAppHotel.sln`** no **Visual Studio** (com a carga de trabalho *.NET Multi-platform App UI* instalada).
+3. Na barra superior de execução, certifique-se de que o destino está selecionado como **Máquina Windows** (ou um emulador Android configurado).
+4. Pressione **`Ctrl + F5`** (ou clique no botão verde de play) para compilar e iniciar o aplicativo.
+
+---
+
+### 2. Passo a Passo no Aplicativo (Fluxo de Uso)
+
+#### 📋 Etapa 1: Contratação de Hospedagem (Tela Principal)
+* **Escolha da Acomodação:** Clique na caixa de seleção (`Picker`) para escolher o tipo de suíte desejada (ex.: *Super Luxo*, *Executiva* ou *Crise*).
+* **Definição de Hóspedes:** 
+  * Utilize os botões **`+`** e **`-`** do controle numérico (`Stepper`) para definir a quantidade de **Adultos**.
+  * Ajuste de forma semelhante o número de **Crianças** que farão parte da estadia.
+* **Período da Reserva:**
+  * Toque no campo **Check-in** (`DatePicker`) para definir o dia de entrada no hotel.
+  * Toque no campo **Check-out** (`DatePicker`) para indicar a data de saída.
+* **Avançar:** Após preencher os dados, clique no botão para calcular e visualizar o resumo da contratação.
+
+#### ℹ️ Etapa 2: Acessando a Tela Sobre
+* No canto superior esquerdo da tela, abra o menu lateral (**AppShell**) ou navegue pelas abas disponíveis.
+* Selecione a opção **"Sobre"** para visualizar as informações do desenvolvedor, ano do projeto e dados acadêmicos exigidos para a entrega da **Agenda 13**.
 
 ---
 
@@ -84,10 +99,26 @@ MauiAppHotel/
 │   └── Sobre.cs                       # Tela Sobre em C# (Layout limpo com Cards)
 ├── App.xaml / App.xaml.cs             # Configuração inicial e tamanho de janela
 ├── AppShell.xaml / AppShell.xaml.cs   # Definição das rotas de navegação
+
+---
+## 🛠️ Tecnologias e Ferramentas 
+
+<p align="center">
+  <img src="https://img.shields.io/badge/C%23-.NET%20MAUI-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
+  <img src="https://img.shields.io/badge/.NET-MAUI-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Visual%20Studio-Community-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-Repositories-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Notepad%2B%2B-Editor-90E59A?style=for-the-badge&logo=notepadplusplus&logoColor=black"/>
+</p>
 └── MauiProgram.cs                     # Ponto de entrada (builder) da aplicação
+---
 👨‍💻 Desenvolvedor
 Nome: Marcos Paulo Correa
 Ano de Desenvolvimento: 2026
 Curso: Técnico em Desenvolvimento de Sistemas
 Componente Curricular: Desenvolvimento de Sistemas II / Programação Mobile I (Agenda 13)
-
+---
